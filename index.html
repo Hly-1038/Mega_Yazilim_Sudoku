@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Oyunu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #7834;
+        }
+
+        .sudoku-board {
+            display: grid;
+            grid-template-columns: repeat(9, 50px);
+            grid-template-rows: repeat(9, 50px);
+            gap: 5px;
+            background-color: #fff;
+            border: 2px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .cell:nth-child(3n), .cell:nth-child(3n-1) {
+            border-right: 2px solid #000;
+        }
+
+        .cell:nth-child(9n), .cell:nth-child(9n-1), .cell:nth-child(9n-2) {
+            border-bottom: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sudoku-board">
+        <!-- Bu kısımda sayıları ve boş hücreleri dilediğiniz gibi düzenleyebilirsiniz. -->
+        <div class="cell">1</div>
+        <div class="cell">2</div>
+        <div class="cell">3</div>
+        <div class="cell">4</div>
+        <div class="cell">5</div>
+        <div class="cell">6</div>
+        <div class="cell">7</div>
+        <div class="cell">8</div>
+        <div class="cell">9</div>
+
+        
+         <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell">5</div>
+        <div class="cell"></div>
+        <div class="cell">3</div>
+        <div class="cell"></div>
+        <div class="cell">7</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+  
+
+        <!-- Diğer hücreleri aynı şekilde devam ettirin... -->
+
+    </div>
+
+</body>
+</html>
